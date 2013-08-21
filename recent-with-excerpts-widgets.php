@@ -89,7 +89,7 @@ class RecentPostsWithExcerpts extends WP_Widget {
                 echo '<h2'.$h2_classes.'><a href="'.get_permalink().'">'.get_the_title().'</a></h2>';
 				
 				if (!empty($date)) 
-					echo '<h3 class="date">'.the_time($date).'</h3>';
+					echo '<h3 class="date">'.get_the_time($date).'</h3>';
                 
                 if ($excerpts > 0) { // show the excerpt 
 					if ($instance['thumb'] && $instance['thumbposition'] == 'between')
